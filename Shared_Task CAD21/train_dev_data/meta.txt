@@ -1,0 +1,8 @@
+The Presentation slide Emphasis Selection dataset files contain five columns separated by a single tab.
+id [TAB] word [TAB] BIO_annottaions [TAB] BIO_frequencies [TAB] emphasis_probability [TAB] 
+
+id = S-{slide number}-{line number}-{word number} in the slide page.
+word = word in the sentences (empty lines indicate the end of sentences)
+BIO_annottaions = The annotations coming from annotators (B: the beginning of the selection, I: inside of the selection, O: outside of the selection)
+BIO_frequencies = the frequencies of BIO tags split by "|"
+emphasis_probability = the emphasis probability (summation of B and I tags). This probability will be used for evaluation. 
